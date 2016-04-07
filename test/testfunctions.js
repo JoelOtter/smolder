@@ -18,11 +18,9 @@ module.exports = {
     },
 
     sumArray: function (arr) {
-        var total = 0;
-        for (var i = 0; i < arr.length; i++) {
-            total += arr[i];
-        }
-        return total;
+        return arr.reduce(function(a, b) {
+            return a + b;
+        });
     },
 
     sumProducts: function (a, b) {
@@ -45,6 +43,12 @@ module.exports = {
     multiplyAges: function(ages, mult) {
         return ages.map(function(age) {
             return age * mult;
+        });
+    },
+
+    product: function(arr) {
+        return arr.reduce(function(a, b) {
+            return a * b;
         });
     }
 
