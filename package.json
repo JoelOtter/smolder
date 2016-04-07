@@ -1,0 +1,34 @@
+{
+  "name": "smolder",
+  "version": "0.0.1",
+  "description": "A library wrapper that attempts to reshape data going into your functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./test/*",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joelotter/smolder"
+  },
+  "keywords": [
+    "reshaper",
+    "type"
+  ],
+  "author": "Joel Auterson <joel.auterson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joelotter/smolder/issues"
+  },
+  "homepage": "https://github.com/joelotter/smolder",
+  "dependencies": {
+    "get-parameter-names": "^0.3.0",
+    "reshaper": "file:../reshaper"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5"
+  }
+}
