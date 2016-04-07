@@ -51,7 +51,7 @@ var peopleData = [
     }
 ];
 ```
-TODO TEST THE ABOVE
+
 We can use Smolder to apply the sumArray function to the data above, and still get the result we want.
 
 ```javascript
