@@ -2,7 +2,7 @@
   "name": "smolder",
   "version": "0.0.1",
   "description": "A library wrapper that attempts to reshape data going into your functions.",
-  "main": "index.js",
+  "main": "./lib/smolder.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha ./test/*",
     "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*"
