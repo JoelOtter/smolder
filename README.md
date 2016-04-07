@@ -20,11 +20,9 @@ If we have a library, `arrays.js`, which looks like this:
 ```javascript
 module.exports = {
     sumArray: function (array) {
-        var result = 0;
-        for (var i = 0; i < array.length; i++) {
-            result += array[i];
-        }
-        return result;
+        return arr.reduce(function(a, b) {
+            return a + b;
+        });
     }
 };
 ```
