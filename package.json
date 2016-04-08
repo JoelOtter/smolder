@@ -1,6 +1,6 @@
 {
   "name": "smolder",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A library wrapper that attempts to reshape data going into your functions.",
   "main": "./lib/smolder.js",
   "scripts": {
