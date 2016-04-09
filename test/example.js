@@ -44,4 +44,8 @@ describe('README example', function() {
         expect(tfs.sumArray(peopleData, hints)).to.equal(3.75);
     });
 
+    it('can use string hints', function() {
+        expect(tfs.sumArray(peopleData, 'height')).to.equal(3.75);
+    });
+
 })

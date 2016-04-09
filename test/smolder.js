@@ -59,8 +59,12 @@ describe('Smolder', function() {
                 .to.equal("Auterson and Hall have a combined age of 3.7");
         });
 
-        it('should ignore non-object hints parameter', function() {
-            expect(tfs.sumArray(peopleData, [])).to.equal(46);
+        it('should ignore non-object/array/string hints parameter', function() {
+            expect(tfs.sumArray(peopleData, Function())).to.equal(46);
+        });
+
+        it('should allow a string as the hint for every parameter', function() {
+            expect(tfs.sumArray(peopleData, 'height')).to.equal(1.9 + 1.8);
         });
 
         it('should not modify functions with no schema', function() {
