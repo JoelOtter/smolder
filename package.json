@@ -23,7 +23,7 @@
   "homepage": "https://github.com/joelotter/smolder",
   "dependencies": {
     "get-parameter-names": "^0.3.0",
-    "reshaper": "git://github.com/JoelOtter/reshaper"
+    "reshaper": "^0.1.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",

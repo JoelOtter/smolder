@@ -6,6 +6,10 @@ Smolder (_it's-a-mold-er_ - sorry) is a JavaScript library wrapper which aims to
 
 The actual reshaping is done using [Reshaper](https://github.com/JoelOtter/reshaper).
 
+## Installation
+
+`npm install smolder`
+
 ## Usage
 
 #### `Smolder(library, [schema])`
