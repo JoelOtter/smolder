@@ -92,6 +92,7 @@ It's also possible to just provide Smolder with a string or array of strings as 
 ```javascript
 arrays.sumArray(peopleData, 'height');
 // => 3.75
+```
 
 If we're using a library we created, we can build it with support for Smolder out-of-the-box. We just need to add the schema to the library's exports, like so:
 
