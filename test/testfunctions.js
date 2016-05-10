@@ -14,6 +14,12 @@ module.exports = {
         },
         multiplyAges: {
             ages: ['Number']
+        },
+        fakeGraph: {
+            data: [{
+                label: 'String',
+                value: 'Number'
+            }]
         }
     },
 
@@ -50,6 +56,14 @@ module.exports = {
         return arr.reduce(function(a, b) {
             return a * b;
         });
+    },
+
+    fakeGraph: function(data) {
+        var result = [];
+        data.forEach(function (item) {
+            result.push(item.label + ': ' + item.value);
+        });
+        return result;
     }
 
 };

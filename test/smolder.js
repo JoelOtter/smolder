@@ -74,6 +74,33 @@ describe('Smolder', function() {
             expect(smoldered.product([1, 2, 3])).to.equal(6);
         });
 
+        it('should allow array hints', function() {
+            expect(tfs.fakeGraph(peopleData, ['lastName', 'height'])).to.eql([
+                'Auterson: 1.9',
+                'Hall: 1.8'
+            ]);
+        });
+
+        it('should allow object hints in multi-arg hint', function() {
+            expect(tfs.fakeGraph(
+                peopleData,
+                {data: {label: 'lastName', value: 'height'}}
+            )).to.eql([
+                'Auterson: 1.9',
+                'Hall: 1.8'
+            ]);
+        });
+
+        it('should allow object hints without multi-arg', function() {
+            expect(tfs.fakeGraph(
+                peopleData,
+                {label: 'lastName', value: 'height'}
+            )).to.eql([
+                'Auterson: 1.9',
+                'Hall: 1.8'
+            ]);
+        });
+
     });
 
     describe('with user provided schema', function() {

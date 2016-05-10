@@ -1,6 +1,6 @@
 # Smolder
 
-[![Build Status](https://travis-ci.org/JoelOtter/smolder.svg?branch=master)](https://travis-ci.org/JoelOtter/smolder) [![Coverage Status](https://coveralls.io/repos/github/JoelOtter/smolder/badge.svg?branch=master)](https://coveralls.io/github/JoelOtter/smolder?branch=master)
+[![Build Status](https://travis-ci.org/JoelOtter/smolder.svg?branch=master)](https://travis-ci.org/JoelOtter/smolder) [![Coverage Status](https://coveralls.io/repos/github/JoelOtter/smolder/badge.svg?branch=master)](https://coveralls.io/github/JoelOtter/smolder?branch=master) [![](https://img.shields.io/npm/v/smolder.svg)](https://www.npmjs.com/package/smolder)
 
 Smolder (_it's-a-mold-er_ - sorry) is a JavaScript library wrapper which aims to reshape the input to functions to match a provided schema. It's kind of like casting on speed.
 
