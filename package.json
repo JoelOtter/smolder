@@ -1,6 +1,6 @@
 {
   "name": "smolder",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A library wrapper that attempts to reshape data going into your functions.",
   "main": "./lib/smolder.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/joelotter/smolder",
   "dependencies": {
     "get-parameter-names": "^0.3.0",
-    "reshaper": "^0.3.0"
+    "reshaper": "^0.3.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
